@@ -1,0 +1,12 @@
+CMake Warning (dev) at C:/Users/vaquettg/esp/v5.2.1/esp-idf/tools/cmake/component.cmake:479 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    D:/mcpwm_class/CDeadTime.cpp
+Call Stack (most recent call first):
+  D:/mcpwm_class/CMakeLists.txt:1 (idf_component_register)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+

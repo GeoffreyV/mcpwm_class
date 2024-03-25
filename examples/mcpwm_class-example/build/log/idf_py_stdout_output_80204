@@ -1,0 +1,28 @@
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 2 dependencies:
+[1/2] gvaquette/mcpwm_class (*)
+[2/2] idf (5.2.1)
+-- Project sdkconfig file D:/mcpwm_class/examples/mcpwm_class-example/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "mcpwm_class-example" version: 1
+-- Adding linker script D:/mcpwm_class/examples/mcpwm_class-example/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx driver efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_mm esp_partition esp_pm esp_ringbuf esp_rom esp_system esp_timer esptool_py freertos hal heap log main mbedtls mcpwm_class newlib partition_table pthread soc spi_flash xtensa
+-- Component paths: C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/app_update C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/bootloader C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/bootloader_support C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/cxx C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/driver C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/efuse C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_app_format C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_bootloader_format C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_common C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_hw_support C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_mm C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_partition C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_pm C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_ringbuf C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_rom C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_system C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esp_timer C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/esptool_py C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/freertos C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/hal C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/heap C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/log D:/mcpwm_class/examples/mcpwm_class-example/main C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/mbedtls D:/mcpwm_class C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/newlib C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/partition_table C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/pthread C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/soc C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/spi_flash C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/mcpwm_class/examples/mcpwm_class-example/build
+[0/1] Re-running CMake...
+[1/2] Cleaning additional files...
+[2/2] Cleaning all built files...
+Cleaning... 0 files.

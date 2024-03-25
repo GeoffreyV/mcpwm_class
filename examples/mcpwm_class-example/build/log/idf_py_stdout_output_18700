@@ -1,0 +1,12 @@
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 2 dependencies:
+[1/2] gvaquette/mcpwm_class (*)
+[2/2] idf (5.2.1)
+-- Configuring incomplete, errors occurred!
+See also "D:/mcpwm_class/examples/mcpwm_class-example/build/CMakeFiles/CMakeOutput.log".
+[0/1] Re-running CMake...
+FAILED: build.ninja 
+C:\Users\vaquettg\.espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SD:\mcpwm_class\examples\mcpwm_class-example -BD:\mcpwm_class\examples\mcpwm_class-example\build

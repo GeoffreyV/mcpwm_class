@@ -1,0 +1,7 @@
+dependencies:
+  gvaquette/mcpwm_class:
+    version: "*"
+
+    # For local development, use the local 
+    # copy of the component : 
+    override_path: '../../../'

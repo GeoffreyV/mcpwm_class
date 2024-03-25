@@ -1,0 +1,15 @@
+dependencies:
+  gvaquette/mcpwm_class:
+    component_hash: null
+    source:
+      path: D:\mcpwm_class
+      type: local
+    version: '*'
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.2.1
+manifest_hash: bde37897e0ed2d381b1230926494ded16eeac15cd2000f1e9d27d224e4ff37fd
+target: esp32
+version: 1.0.0

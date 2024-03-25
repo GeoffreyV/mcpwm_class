@@ -1,0 +1,36 @@
+[1/10] Building CXX object esp-idf/mcpwm_class/CMakeFiles/__idf_mcpwm_class.dir/COperator.cpp.obj
+In file included from D:/mcpwm_class/include/COperator.h:6,
+                 from D:/mcpwm_class/COperator.cpp:1:
+D:/mcpwm_class/include/CDeadtime.h:25:5: warning: missing initializer for member 'mcpwm_dead_time_config_t::flags' [-Wmissing-field-initializers]
+   25 |     };
+      |     ^
+D:/mcpwm_class/COperator.cpp: In function 'void dead_time_config(mcpwm_gen_handle_t, mcpwm_gen_handle_t)':
+D:/mcpwm_class/COperator.cpp:16:5: warning: missing initializer for member 'mcpwm_dead_time_config_t::flags' [-Wmissing-field-initializers]
+   16 |     };
+      |     ^
+D:/mcpwm_class/COperator.cpp: In constructor 'COperator::COperator(int, int, std::vector<CGenerator>)':
+D:/mcpwm_class/COperator.cpp:40:69: warning: missing initializer for member 'mcpwm_operator_config_t::flags' [-Wmissing-field-initializers]
+   40 |     m_config = {.group_id = group_id, .intr_priority = intr_priority};
+      |                                                                     ^
+D:/mcpwm_class/COperator.cpp: At global scope:
+D:/mcpwm_class/COperator.cpp:11:13: warning: 'void dead_time_config(mcpwm_gen_handle_t, mcpwm_gen_handle_t)' defined but not used [-Wunused-function]
+   11 | static void dead_time_config(mcpwm_gen_handle_t gena, mcpwm_gen_handle_t genb)
+      |             ^~~~~~~~~~~~~~~~
+D:/mcpwm_class/COperator.cpp:3:13: warning: 'void gen_action_config(mcpwm_gen_handle_t, mcpwm_gen_handle_t, mcpwm_cmpr_handle_t, mcpwm_cmpr_handle_t)' defined but not used [-Wunused-function]
+    3 | static void gen_action_config(mcpwm_gen_handle_t gena, mcpwm_gen_handle_t genb, mcpwm_cmpr_handle_t cmpa, mcpwm_cmpr_handle_t cmpb)
+      |             ^~~~~~~~~~~~~~~~~
+[2/10] Building CXX object esp-idf/mcpwm_class/CMakeFiles/__idf_mcpwm_class.dir/CGenerator.cpp.obj
+[3/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\mcpwm_class\examples\mcpwm_class-example\build\bootloader\esp-idf\esptool_py && C:\Users\vaquettg\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/mcpwm_class/examples/mcpwm_class-example/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[4/8] Linking C static library esp-idf\mcpwm_class\libmcpwm_class.a
+[5/8] Generating ld/sections.ld
+[6/8] Linking CXX executable mcpwm_class-example.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/mcpwm_class/examples/mcpwm_class-example/build/mcpwm_class-example.bin
+[8/8] cmd.exe /C "cd /D D:\mcpwm_class\examples\mcpwm_class-example\build\esp-idf\esptool_py && C:\Users\vaquettg\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/vaquettg/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/mcpwm_class/examples/mcpwm_class-example/build/partition_table/partition-table.bin D:/mcpwm_class/examples/mcpwm_class-example/build/mcpwm_class-example.bin"
+mcpwm_class-example.bin binary size 0x25fe0 bytes. Smallest app partition is 0x100000 bytes. 0xda020 bytes (85%) free.
