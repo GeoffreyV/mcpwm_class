@@ -20,7 +20,10 @@ void CDeadTime::apply_active_high_complementary_mode(mcpwm_gen_handle_t gena, mc
 {
     mcpwm_dead_time_config_t dead_time_config = {
         .posedge_delay_ticks = m_config.posedge_delay_ticks,
-        .negedge_delay_ticks = 0
+        .negedge_delay_ticks = 0,
+        .flags ={
+            .invert_output = false,
+        }
     };
 
     ESP_ERROR_CHECK(mcpwm_generator_set_dead_time(gena, gena, &dead_time_config));

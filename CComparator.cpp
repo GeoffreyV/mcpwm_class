@@ -1,5 +1,7 @@
 #include "CComparator.hpp"
+#include "esp_log.h"
 
+#define TAG "CComparator"
 
 extern "C" CComparator::CComparator()
 {
@@ -19,5 +21,7 @@ extern "C" CComparator::~CComparator()
 
 extern "C" esp_err_t CComparator::set_comparator_value(uint32_t cmp_ticks)
 {
+    ESP_LOGD(TAG,"Setting comparator value to %lu",cmp_ticks);
     return mcpwm_comparator_set_compare_value(m_handle,cmp_ticks);
 }
+

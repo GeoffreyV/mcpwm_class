@@ -2,7 +2,7 @@
 
 CTimer::CTimer()
 {
-    ESP_ERROR_CHECK(mcpwm_new_timer(&m_config, &m_handle));
+
 }
 
 CTimer::~CTimer()
@@ -13,7 +13,6 @@ CTimer::~CTimer()
 CTimer::CTimer(mcpwm_timer_config_t x_config)
 {
     m_config = x_config;
-    ESP_ERROR_CHECK(mcpwm_new_timer(&m_config, &m_handle));
 }
 
 void CTimer::set_frequency(uint32_t x_frequency)
@@ -34,6 +33,11 @@ void CTimer::set_timer_mode(mcpwm_timer_count_mode_t x_count_mode)
 void CTimer::set_config(mcpwm_timer_config_t x_config)
 {
     m_config = x_config;
+}
+
+esp_err_t CTimer::init()
+{
+    return mcpwm_new_timer(&m_config, &m_handle);
 }
 
 esp_err_t CTimer::enable()

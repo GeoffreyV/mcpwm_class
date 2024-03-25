@@ -13,7 +13,8 @@ public:
     CGenerator(mcpwm_oper_handle_t x_operator);
     CGenerator(mcpwm_generator_config_t x_config,mcpwm_oper_handle_t x_operator);
     ~CGenerator();
-
+    
+    esp_err_t init(void);
     esp_err_t init(mcpwm_oper_handle_t x_operator);
     esp_err_t set_gpio_num(int x_gpio_num);
 
@@ -32,6 +33,7 @@ private:
     };
 
     mcpwm_gen_handle_t m_handle;
+    mcpwm_oper_handle_t m_operator_parent;
 
 
 

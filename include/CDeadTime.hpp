@@ -21,7 +21,10 @@ public:
 private:
     mcpwm_dead_time_config_t m_config = {
         .posedge_delay_ticks = 10,
-        .negedge_delay_ticks = 10
+        .negedge_delay_ticks = 10,
+        .flags = {
+            .invert_output = false,
+        }
     };
 };
 

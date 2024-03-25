@@ -1,6 +1,8 @@
 #pragma once
 #include "driver/mcpwm_oper.h"
+#include "driver/gpio.h"
 
+#include "CTimer.hpp"
 #include "CGenerator.hpp"
 #include "CComparator.hpp"
 #include "CDeadtime.hpp"
@@ -16,6 +18,8 @@ extern "C"
         COperator();
         COperator(int group_id, int intr_priority = 0);
         ~COperator();
+
+        void set_gpio_generator_pins(int gpio1, int gpio2 = GPIO_NUM_NC);
 
         virtual void init();
 
@@ -37,10 +41,14 @@ extern "C"
         };
 
         mcpwm_oper_handle_t m_handle;
-        mcpwm_timer_handle_t m_timer_connected;
+        mcpwm_timer_handle_t m_timer_connected_handle;
         CGenerator m_generators[2];
         CComparator m_comparators[2];
         CDeadTime m_deadtime;
+
+        int m_gpio_numbers[2] = {GPIO_NUM_NC, GPIO_NUM_NC};
+
+
         
         
     };
