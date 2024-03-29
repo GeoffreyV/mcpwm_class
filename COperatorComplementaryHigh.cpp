@@ -27,12 +27,12 @@ COperatorComplementaryHigh::COperatorComplementaryHigh(int group_id, int intr_pr
     ESP_ERROR_CHECK(mcpwm_new_operator(&this->m_config, &this->m_handle));
 }
 
-esp_err_t COperatorComplementaryHigh::set_duty_cycle(float duty_cycle, uint32_t timer_period_ticks){
-    ESP_LOGD(TAG, "Setting duty cycle to %f", duty_cycle);
+esp_err_t COperatorComplementaryHigh::set_duty_cycle(unsigned int duty_cycle_percent, unsigned int timer_period_ticks){
+    ESP_LOGD(TAG, "Setting duty cycle to %d \%", duty_cycle_percent);
     ESP_LOGD(TAG, "Got timer period %lu", timer_period_ticks);
-    ESP_LOGD(TAG, "Setting compare value to %lu", (uint32_t) (duty_cycle*timer_period_ticks));
+    ESP_LOGD(TAG, "Setting compare value to %lu", (uint32_t) (duty_cycle_percent*timer_period_ticks));
 
-    return m_comparators[0].set_comparator_value((uint32_t) (duty_cycle*timer_period_ticks));
+    return m_comparators[0].set_comparator_value((uint32_t) (duty_cycle_percent*timer_period_ticks / 100));
 }
 
 void COperatorComplementaryHigh::init()

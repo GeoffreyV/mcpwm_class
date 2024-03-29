@@ -17,7 +17,7 @@ public:
     virtual void init();
 
 
-    esp_err_t set_duty_cycle(float duty_cycle, uint32_t timer_period_ticks);
+    esp_err_t set_duty_cycle(unsigned int duty_cycle_percent, unsigned int timer_period_ticks);
     
 
 private:
